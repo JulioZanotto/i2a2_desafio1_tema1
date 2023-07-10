@@ -6,7 +6,7 @@
 Todo resolvido utilizando ChatGPT e imagens criadas via Dall-E e Bing, pedindo as imagens para o Bing AI gerar.
 
 Como acessar a página de produtos:
-Entrar com login "usuario" e senha "senha" para acessar.
+- Entrar com login "usuario" e senha "senha" para acessar.
 
 Exemplos dos prompts para o ChatGPT:
 
