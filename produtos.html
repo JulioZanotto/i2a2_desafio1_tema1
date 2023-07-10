@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lista de Produtos</title>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      overflow-x: hidden;
+    }
+
+    .logo {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 150px;
+      height: 150px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .produto {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .produto img {
+      width: 200px;
+      height: auto;
+      margin-right: 10px;
+    }
+
+    .produto-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .produto-info span {
+      margin-bottom: 5px;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <img src="outros/logo1.png" alt="Logo da Empresa" width="150" height="150">
+  </div>
+  
+  <h1>Lista de Produtos</h1>
+  
+  <div class="produto">
+    <img src="produtos/produto_arco.jpg" alt="Produto 1">
+    <div class="produto-info">
+      <span>ID: 1</span>
+      <span>Nome: Arco Longo Medieval</span>
+      <span>Preço Unitário: R$ 650,00</span>
+    </div>
+  </div>
+
+  <div class="produto">
+    <img src="produtos/produto_flechas.jpg" alt="Produto 2">
+    <div class="produto-info">
+      <span>ID: 2</span>
+      <span>Nome: Flecha Medieval com ponta em aço</span>
+      <span>Preço Unitário: R$ 28,00</span>
+    </div>
+  </div>
+
+  <!-- Repita os blocos de produto para os demais produtos -->
+
+  <div class="produto">
+    <img src="produtos/produto_espada.jpg" alt="Produto 3">
+    <div class="produto-info">
+      <span>ID: 3</span>
+      <span>Nome: Espada medieval templária</span>
+      <span>Preço Unitário: R$ 1600,00</span>
+    </div>
+  </div>
+
+  <div class="produto">
+    <img src="produtos/produto_malha.jpg" alt="Produto 4">
+    <div class="produto-info">
+      <span>ID: 4</span>
+      <span>Nome: Cota de Malha</span>
+      <span>Preço Unitário: R$ 1200,00</span>
+    </div>
+  </div>
+
+  <div class="produto">
+    <img src="produtos/produto_machado.jpg" alt="Produto 5">
+    <div class="produto-info">
+      <span>ID: 5</span>
+      <span>Nome: Machado Medieval das Cruzadas</span>
+      <span>Preço Unitário: R$ 700,00</span>
+    </div>
+  </div>
+
+  <div class="produto">
+    <img src="produtos/produto_elmo.jpg" alt="Produto 6">
+    <div class="produto-info">
+      <span>ID: 6</span>
+      <span>Nome: Elmo medieval</span>
+      <span>Preço Unitário: R$ 850,00</span>
+    </div>
+  </div>
+
+  <div class="produto">
+    <img src="produtos/produto_adaga.jpg" alt="Produto 7">
+    <div class="produto-info">
+      <span>ID: 7</span>
+      <span>Nome: Adaga medieval templária</span>
+      <span>Preço Unitário: R$ 450,00</span>
+    </div>
+  </div>
+
+  <div class="produto">
+    <img src="produtos/produto_tunica.jpg" alt="Produto 8">
+    <div class="produto-info">
+      <span>ID: 8</span>
+      <span>Nome: Túnica medieval templária</span>
+      <span>Preço Unitário: R$ 1200,00</span>
+    </div>
+  </div>
+
+  <div class="produto">
+    <img src="produtos/produto_escudo.jpg" alt="Produto 9">
+    <div class="produto-info">
+      <span>ID: 9</span>
+      <span>Nome: Escudo medieval templário, em aço</span>
+      <span>Preço Unitário: R$ 500,00</span>
+    </div>
+  </div>
+
+  <div class="produto">
+    <img src="produtos/produto_bandeira.jpg" alt="Produto 10">
+    <div class="produto-info">
+      <span>ID: 10</span>
+      <span>Nome: Bandeira templária</span>
+      <span>Preço Unitário: R$ 180,00</span>
+    </div>
+  </div>
+
+  <script src="produtos.js"></script>
+</body>
+</html>

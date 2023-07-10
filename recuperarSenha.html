@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recuperar Senha</title>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      overflow-x: hidden;
+    }
+
+    .logo {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 150px;
+      height: 150px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    label {
+      margin-bottom: 10px;
+    }
+
+    input[type="email"] {
+      padding: 10px;
+      border: none;
+      border-radius: 3px;
+      width: 250px;
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+  </style>
+  <script src="recuperarSenha.js"></script>
+</head>
+<body>
+  <div class="logo">
+    <img src="outros/logo1.png" alt="Logo da Empresa" width="150" height="150">
+  </div>
+  
+  <h1>Recuperar Senha</h1>
+  <form id="recuperarSenhaForm">
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+
+    <input type="submit" value="Redefinir Senha">
+  </form>
+
+  <script>
+    document.getElementById("recuperarSenhaForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Impede o envio do formulário
+
+      var email = document.getElementById("email").value;
+
+      if (email.trim() !== "") {
+        alert("Link para redefinição de senha enviado para o endereço informado.");
+        window.location.href = "login.html";
+      } else {
+        alert("Por favor, preencha o campo de email.");
+      }
+    });
+  </script>
+</body>
+</html>

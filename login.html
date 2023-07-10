@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Página de Login</title>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      overflow-x: hidden;
+    }
+
+    .logo {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 150px;
+      height: 150px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 20px;
+    }
+
+    form {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    label {
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      padding: 10px;
+      border: none;
+      border-radius: 3px;
+      width: 250px;
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    .welcome-text {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 50px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <img src="outros/logo1.png" alt="Logo da Empresa" width="150" height="150">
+  </div>
+  
+  <h1>Página de Login</h1>
+
+  <p class="welcome-text">Bem-vindo à Loja Medievalis</p>
+
+  <form id="loginForm">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" required>
+
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" required>
+
+    <input type="submit" value="Entrar">
+  </form>
+  <a href="recuperarSenha.html">Esqueci minha senha</a>
+
+  <script src="login.js"></script>
+</body>
+</html>
